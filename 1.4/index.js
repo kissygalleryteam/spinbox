@@ -211,6 +211,12 @@ KISSY.add(function(S, Node, Base){
              */
             ariaLabel: {
                 value: ''
+            },
+            /**
+            * css模块路径
+            */
+            cssUrl: {
+                value: 'gallery/spinbox/1.4/index.css'
             }
         }
     });

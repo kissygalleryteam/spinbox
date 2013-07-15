@@ -1,7 +1,7 @@
 /*
 combined files : 
 
-gallery/spinbox/1.0/index
+gallery/spinbox/1.4/index
 
 */
 /**
@@ -9,7 +9,7 @@ gallery/spinbox/1.0/index
  * @author yilian<hyawj518@gmail.com>
  * @module spinbox
  **/
-KISSY.add('gallery/spinbox/1.0/index',function(S, Node, Base){
+KISSY.add('gallery/spinbox/1.4/index',function(S, Node, Base){
     var $ = Node.all;
     /**
      * @name SpinBox
@@ -217,6 +217,12 @@ KISSY.add('gallery/spinbox/1.0/index',function(S, Node, Base){
              */
             ariaLabel: {
                 value: ''
+            },
+            /**
+            * css模块路径
+            */
+            cssUrl: {
+                value: 'gallery/spinbox/1.4/index.css'
             }
         }
     });

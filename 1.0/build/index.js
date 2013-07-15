@@ -1,7 +1,7 @@
 /*
 combined files : 
 
-gallery/spinbox/1.4/index
+gallery/spinbox/1.0/index
 
 */
 /**
@@ -9,7 +9,7 @@ gallery/spinbox/1.4/index
  * @author 易敛<yilian.wj@taobao.com>
  * @date 12-4-22
  */
-KISSY.add('gallery/spinbox/1.4/index',function(S, Node, Base){
+KISSY.add('gallery/spinbox/1.0/index',function(S, Node, Base){
     var $ = Node.all, D = S.DOM, Event = S.Event;
     /**
      * @name SpinBox
