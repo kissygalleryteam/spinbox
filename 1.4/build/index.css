@@ -11,8 +11,8 @@
     display: inline-block;
     height: 14px;
     line-height: 14px;
+    font-size: 0;
     overflow: hidden;
-    text-indent: -9999em;
     text-align: center;
     width: 14px;
     vertical-align: middle;

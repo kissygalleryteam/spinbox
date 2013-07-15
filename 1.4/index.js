@@ -1,10 +1,10 @@
 /**
- * @fileoverview 数字文本框
- * @author 易敛<yilian.wj@taobao.com>
- * @date 12-4-22
- */
+ * @fileoverview 数字增减器
+ * @author yilian<hyawj518@gmail.com>
+ * @module spinbox
+ **/
 KISSY.add(function(S, Node, Base){
-    var $ = Node.all, D = S.DOM, Event = S.Event;
+    var $ = Node.all;
     /**
      * @name SpinBox
      * @class 数字文本框
@@ -21,6 +21,8 @@ KISSY.add(function(S, Node, Base){
         config = S.merge({target: $(target)},config);
         //调用父类构造器
         SpinBox.superclass.constructor.call(self, config);
+
+        self.render();
     }
 
     S.extend(SpinBox, Base,  /** @lends SpinBox.prototype*/{
@@ -62,9 +64,9 @@ KISSY.add(function(S, Node, Base){
             //创建元素
             $target.each(function(item){
                 var $parent = item.parent(),
-                    $containerEl = $(D.create('<span class="'+ getCls.container  + '"></span>')),
-                    $plusEl = $(D.create('<a href="#!/plus" class="'+ getCls.plus + ' ' + getCls.sign +'">+</a>')),
-                    $minusEl = $(D.create('<a href="#!/minus" class="'+ getCls.minus + ' ' + getCls.sign +'">-</a>'));
+                    $containerEl = $('<span class="'+ getCls.container  + '"></span>'),
+                    $plusEl = $('<a href="#!/plus" class="'+ getCls.plus + ' ' + getCls.sign +'" role="button">+</a>'),
+                    $minusEl = $('<a href="#!/minus" class="'+ getCls.minus + ' ' + getCls.sign +'"  role="button">-</a>');
 
                 // 赋予aria属性
                 item.attr({'aria-label':ariaLabel});
@@ -211,8 +213,8 @@ KISSY.add(function(S, Node, Base){
                 value: ''
             },
             /**
-             * css模块路径
-             */
+            * css模块路径
+            */
             cssUrl: {
                 value: 'gallery/spinbox/1.4/index.css'
             }
@@ -220,3 +222,6 @@ KISSY.add(function(S, Node, Base){
     });
     return SpinBox;
 },{requires:['node','base']});
+
+
+
