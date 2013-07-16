@@ -23,5 +23,4 @@ javascript
             onValueChange:function(e){
                 alert(e.target.val());
         }});
-        spinbox.render();
     })
