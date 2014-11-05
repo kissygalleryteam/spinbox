@@ -1,7 +1,7 @@
 /*
 combined files : 
 
-kg/spinbox/2.0.0/index
+kg/spinbox/2.0.1/index
 
 */
 /**
@@ -9,7 +9,7 @@ kg/spinbox/2.0.0/index
  * @author yilian<hyawj518@gmail.com>
  * @module spinbox
  **/
-KISSY.add('kg/spinbox/2.0.0/index',function(S, Node, Base){
+KISSY.add('kg/spinbox/2.0.1/index',function(S, Node, Base){
     var $ = Node.all;
     var timer = '';
     /**
@@ -236,7 +236,7 @@ KISSY.add('kg/spinbox/2.0.0/index',function(S, Node, Base){
             * css模块路径
             */
             cssUrl: {
-                value: 'kg/spinbox/1.4/index.css'
+                value: './index.css'
             }
         }
     });

@@ -230,7 +230,7 @@ KISSY.add(function(S, Node, Base){
             * css模块路径
             */
             cssUrl: {
-                value: 'gallery/spinbox/1.4/index.css'
+                value: './index.css'
             }
         }
     });

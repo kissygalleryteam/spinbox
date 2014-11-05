@@ -16,7 +16,7 @@ html结构
 
 javascript
 
-    S.use('kg/spinbox/2.0.0/index', function (S, SpinBox) {
+    S.use('kg/spinbox/2.0.1/index', function (S, SpinBox) {
         var spinbox = new SpinBox('.ks-spinbox', {
             ariaLabel:'出价框，请输入价格',
             //输入框值改变后触发
